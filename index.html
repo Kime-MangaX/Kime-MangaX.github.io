@@ -1089,7 +1089,7 @@ const PROFILE = {
   tags: ["Unity 6", "C#", "ShaderLab", "HLSL"],
   stats: [
     { value: "3", label: "Proyectos destacados" },
-    { value: "11", label: "Repos en GitHub" },
+    { value: "12", label: "Repos en GitHub" },
     { value: "Unity 6", label: "Motor principal" }
   ],
   links: [
@@ -1119,16 +1119,19 @@ const PROJECTS = [
   },
   {
     title: "SECTARIO",
-    kind: "En desarrollo",
+    kind: "Novela visual interactiva",
     year: "2026",
-    description: "Proyecto en desarrollo. El repositorio todavía no es público; el brief técnico aparecerá aquí cuando esté listo.",
-    tech: ["Unity", "C#"],
-    brief: [],
-    patterns: [],
+    description: "Novela visual en Ren'Py sobre Luzbel y Miguel, con una entidad que irrumpe en la historia y responde a lo que le escribas mediante IA.",
+    tech: ["Ren'Py", "Python", "Gemini API"],
+    brief: [
+      "Prototipo de novela visual en Ren'Py con sistema de diálogos, menús y recursos de interfaz personalizados, incluida una variante tipo teléfono.",
+      "Personaje conectado a la API de Google Gemini: el jugador escribe libremente y la IA responde manteniendo el rol, con memoria de la conversación, indicador de escritura y peticiones en segundo plano.",
+      "Encuentros aleatorios condicionados por la conexión a internet, sistema para nombrar a la entidad y final secreto al adivinar su nombre verdadero."
+    ],
+    patterns: ["IA generativa", "Prompt de sistema", "Ren'Py"],
     demo: "",
-    repo: "",
-    image: "",
-    private: true,
+    repo: "https://github.com/Kime-MangaX/SECTARIO",
+    image: "assets/sectario.jpg",
     colors: ["#e879f9", "#a855f7"]
   },
   {
@@ -1308,7 +1311,7 @@ function renderProjects() {
     '<a class="project-card repo-cta reveal" href="https://github.com/Kime-MangaX" target="_blank" rel="noopener" style="--t1:#2ee6f6;--t2:#e879f9">' +
       '<span class="thumb-tag">GitHub</span>' +
       '<h3>Más experimentos</h3>' +
-      '<p>Laboratorios, prototipos y pruebas de shaders. Explora los 11 repositorios públicos de mi perfil.</p>' +
+      '<p>Laboratorios, prototipos y pruebas de shaders. Explora los 12 repositorios públicos de mi perfil.</p>' +
       '<span class="card-link">Ver repositorios <span>→</span></span>' +
     '</a>'
   );
